@@ -18,7 +18,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import net.minecraft.item.*;
-@Mod(modid="GrimCraft", name="GrimCraft", version="1.0.0")
+@Mod(modid="grimcraft", name="grimcraft", version="1.0.0")
 @NetworkMod(clientSideRequired=true, serverSideRequired=false)
 
 public class GrimCraft {
