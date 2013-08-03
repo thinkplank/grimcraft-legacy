@@ -28,7 +28,7 @@ public class GrimCraft {
 
 	public final static Item grimWoodStick = new GrimWoodStick(9150);
 
-	@SidedProxy(clientSide="tutorial.generic.client.ClientProxy", serverSide="tutorial.generic.CommonProxy")
+	@SidedProxy(clientSide="thinkplank.grimcraft.client.ClientProxy", serverSide="thinkplank.grimcraft.CommonProxy")
         public static CommonProxy proxy;
 
 	@EventHandler
