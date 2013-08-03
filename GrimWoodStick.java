@@ -5,7 +5,7 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class GrimWoodStick extends Item {
 
-        public GenericItem(int id) {
+        public GrimWoodStick(int id) {
 
                 super(id);
 		setMaxStackSize(64);
