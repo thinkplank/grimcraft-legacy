@@ -3,6 +3,7 @@ package thinkplank.grimcraft.item;
 import net.minecraft.item.Item;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.texture.IconRegister;
+import cpw.mods.fml.common.SidedProxy;
 
 public class GrimWoodStick extends Item {
         public GrimWoodStick(int id) {
