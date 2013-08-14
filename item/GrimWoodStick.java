@@ -15,7 +15,6 @@ public class GrimWoodStick extends Item {
         @Override
         @SideOnly(Side.CLIENT)
         public void registerIcons(IconRegister register) {
-                
                  this.itemIcon = iconRegister.registerIcon("grimcraft:grimwoodstick");
         }
 }
