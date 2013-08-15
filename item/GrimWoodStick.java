@@ -4,8 +4,8 @@ import net.minecraft.item.Item;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.texture.IconRegister;
 import cpw.mods.fml.common.Side;
-import cpw.mods.fml.common.SidedProxy;
-import cpw.mods.fml.common.asm.SideOnly;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class GrimWoodStick extends Item {
         public GrimWoodStick(int id) {
