@@ -26,7 +26,7 @@ public class GrimCraft {
 	@Instance("GrimCraft")
 	public static GrimCraft instance;
 	
-	public final static Block sulfurOre = new BlockSulfurOre(9150);
+	public final static Block sulfurOre = new BlockSulfurOre(9161, Material.rock);
 
 	public final static Item grimWoodStick = new ItemGrimWoodStick(9150);
 	
