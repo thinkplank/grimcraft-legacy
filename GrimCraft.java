@@ -25,6 +25,8 @@ public class GrimCraft {
 
 	@Instance("GrimCraft")
 	public static GrimCraft instance;
+	
+	public final static Block sulfurOre = new BlockSulfurOre(9150);
 
 	public final static Item grimWoodStick = new ItemGrimWoodStick(9150);
 	
@@ -59,6 +61,10 @@ public class GrimCraft {
 		LanguageRegistry.addName(strawberry, "Strawberry");
 		LanguageRegistry.addName(chiliPepper, "Chili Pepper");
 		LangaugeRegistry.addName(phoenixEgg, "Phoenix Egg");
+		
+		LanguageRegistry.addName(sulfurOre, "Sulfur Ore");
+		MinecraftForge.setBlockHarvestLevel(sulfurOre, "pickaxe", 0);
+		GameRegistry.registerBlock(sulfurOre, "sulfurore");
 	}
 
 	@EventHandler
