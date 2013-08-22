@@ -9,9 +9,9 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class ItemWitherBone extends Item {
         public ItemWitherBone(int id) {
                 super(id);
-        		setMaxStackSize(64);
-        		setCreativeTab(CreativeTabs.tabMaterials);
-        		setUnlocalizedName("witherbone");
+        	setMaxStackSize(64);
+        	setCreativeTab(CreativeTabs.tabMaterials);
+		setUnlocalizedName("witherbone");
         }
         
         @Override
