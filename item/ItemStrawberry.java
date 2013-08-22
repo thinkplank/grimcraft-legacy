@@ -9,9 +9,9 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class ItemStrawberry extends Item {
         public ItemStrawberry(int id) {
                 super(id);
-        		setMaxStackSize(64);
-        		setCreativeTab(CreativeTabs.tabMaterials);
-        		setUnlocalizedName("strawberry");
+        	setMaxStackSize(64);
+        	setCreativeTab(CreativeTabs.tabMaterials);
+		setUnlocalizedName("strawberry");
         }
         
         @Override
