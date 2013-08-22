@@ -6,8 +6,8 @@ import net.minecraft.client.renderer.texture.IconRegister;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class WitherBone extends Item {
-        public WitherBone(int id) {
+public class ItemWitherBone extends Item {
+        public ItemWitherBone(int id) {
                 super(id);
         		setMaxStackSize(64);
         		setCreativeTab(CreativeTabs.tabMaterials);
