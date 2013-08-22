@@ -9,9 +9,9 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class ItemPhoenixEgg extends Item {
         public ItemPhoenixEgg(int id) {
                 super(id);
-        		setMaxStackSize(64);
-        		setCreativeTab(CreativeTabs.tabMaterials);
-        		setUnlocalizedName("phoenixegg");
+        	setMaxStackSize(64);
+        	setCreativeTab(CreativeTabs.tabMaterials);
+		setUnlocalizedName("phoenixegg");
         }
         
         @Override
