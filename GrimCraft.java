@@ -1,5 +1,5 @@
 /*
- *GrimCraft.java 1.0.0 7-26-2013
+ *GrimCraft.java 1.0.0 8-22-2013
  *
  *Licenced under whatever we decide
  */
@@ -26,7 +26,18 @@ public class GrimCraft {
 	@Instance("GrimCraft")
 	public static GrimCraft instance;
 
-	public final static Item grimWoodStick = new GrimWoodStick(9150);
+	public final static Item grimWoodStick = new ItemGrimWoodStick(9150);
+	
+	//Tools go here
+	
+	public final static Item witherBone = new ItemWitherBone(9427);
+	public final static Item witherBonemeal = new ItemWitherBonemeal(9428);
+	public final static Item sulfur = new ItemSulfur(9429);
+	public final static Item barley = new ItemBarley(9421);
+	public final static Item barleySeeds = new ItemBarleySeeds(9432);
+	public final static Item strawberry = new ItemBarleySeeds(9433);
+	public final static Item chiliPepper = new ItemChiliPepper(9434);
+	public final static Item phoenixEgg = new ItemPhoenixEgg(9435);
 
 	@SidedProxy(clientSide="thinkplank.grimcraft.client.ClientProxy", serverSide="thinkplank.grimcraft.CommonProxy")
         public static CommonProxy proxy;
@@ -40,6 +51,14 @@ public class GrimCraft {
 	public void load(FMLInitializationEvent event) {
 		
 		LanguageRegistry.addName(grimWoodStick, "Grimwood Stick");
+		LanguageRegistry.addName(witherBone, "Wither Bone");
+		LanguageRegistry.addName(witherBonemeal, "WIther Bonemeal");
+		LanguageRegistry.addName(sulfur, "Sulfur");
+		LanguageRegistry.addName(barley, "Barley");
+		LanguageRegistry.addName(barleySeeds, "Barley Seeds");
+		LanguageRegistry.addName(strawberry, "Strawberry");
+		LanguageRegistry.addName(chiliPepper, "Chili Pepper");
+		LangaugeRegistry.addName(phoenixEgg, "Phoenix Egg");
 	}
 
 	@EventHandler
