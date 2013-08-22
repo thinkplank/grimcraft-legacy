@@ -6,8 +6,8 @@ import net.minecraft.client.renderer.texture.IconRegister;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class GrimWoodStick extends Item {
-        public GrimWoodStick(int id) {
+public class ItemGrimWoodStick extends Item {
+        public ItemGrimWoodStick(int id) {
                 super(id);
         		setMaxStackSize(64);
         		setCreativeTab(CreativeTabs.tabMaterials);
