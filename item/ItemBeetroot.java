@@ -9,9 +9,9 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class ItemBeetroot extends Item {
         public ItemBeetroot(int id) {
                 super(id);
-        		setMaxStackSize(64);
-        		setCreativeTab(CreativeTabs.tabMaterials);
-        		setUnlocalizedName("beetroot");
+        	setMaxStackSize(64);
+		setCreativeTab(CreativeTabs.tabMaterials);
+		setUnlocalizedName("beetroot");
         }
         
         @Override
