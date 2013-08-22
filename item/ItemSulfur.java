@@ -6,8 +6,8 @@ import net.minecraft.client.renderer.texture.IconRegister;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class Sulfur extends Item {
-        public Sulfur(int id) {
+public class ItemSulfur extends Item {
+        public ItemSulfur(int id) {
                 super(id);
         		setMaxStackSize(64);
         		setCreativeTab(CreativeTabs.tabMaterials);
