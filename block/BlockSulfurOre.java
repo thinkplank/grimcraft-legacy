@@ -7,7 +7,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.texture.IconRegister;
 
 public class BlockSulfurOre extends Block {
-        public GenericBlock (int id, Material material) {
+        public BlockSulfurOre (int id, Material material) {
                 super(id, material);
                 setHardness(3F);
                 setStepSound(Block.soundStoneFootstep);
