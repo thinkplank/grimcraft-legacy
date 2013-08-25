@@ -21,9 +21,9 @@ import net.minecraft.item.*;
 @Mod(modid="grimcraft", name="grimcraft", version="1.0.0")
 @NetworkMod(clientSideRequired=true, serverSideRequired=false)
 
-public class GrimCraft {
+public class Grimcraft {
 
-	@Instance("GrimCraft")
+	@Instance("Grimcraft")
 	public static GrimCraft instance;
 	
 	public final static Block sulfurOre = new BlockSulfurOre(9161, Material.rock);
