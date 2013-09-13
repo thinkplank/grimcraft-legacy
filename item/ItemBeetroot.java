@@ -10,13 +10,13 @@ public class ItemBeetroot extends Item {
         public ItemBeetroot(int id) {
                 super(id);
         	setMaxStackSize(64);
-		setCreativeTab(CreativeTabs.tabMaterials);
-		setUnlocalizedName("beetroot");
+        	setCreativeTab(CreativeTabs.tabMaterials);
+        	setUnlocalizedName("beetroot");
         }
         
         @Override
         @SideOnly(Side.CLIENT)
         public void registerIcons(IconRegister iconRegister) {
-                 this.itemIcon = iconRegister.registerIcon("GrimCraft:beetroot");
+                 this.itemIcon = iconRegister.registerIcon("grimcraft:beetroot");
         }
 }

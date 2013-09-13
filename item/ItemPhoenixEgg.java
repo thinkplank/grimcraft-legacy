@@ -17,6 +17,6 @@ public class ItemPhoenixEgg extends Item {
         @Override
         @SideOnly(Side.CLIENT)
         public void registerIcons(IconRegister iconRegister) {
-                 this.itemIcon = iconRegister.registerIcon("GrimCraft:phoenixegg");
+                 this.itemIcon = iconRegister.registerIcon("grimcraft:phoenixegg");
         }
 }

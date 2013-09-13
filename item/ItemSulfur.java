@@ -17,6 +17,6 @@ public class ItemSulfur extends Item {
         @Override
         @SideOnly(Side.CLIENT)
         public void registerIcons(IconRegister iconRegister) {
-                 this.itemIcon = iconRegister.registerIcon("GrimCraft:sulfur");
+                 this.itemIcon = iconRegister.registerIcon("grimcraft:sulfur");
         }
 }
