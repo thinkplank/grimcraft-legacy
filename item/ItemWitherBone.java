@@ -17,6 +17,6 @@ public class ItemWitherBone extends Item {
         @Override
         @SideOnly(Side.CLIENT)
         public void registerIcons(IconRegister iconRegister) {
-                 this.itemIcon = iconRegister.registerIcon("GrimCraft:witherbone");
+                 this.itemIcon = iconRegister.registerIcon("grimcraft:witherbone");
         }
 }

@@ -11,12 +11,12 @@ public class ItemGrimWoodStick extends Item {
                 super(id);
         	setMaxStackSize(64);
         	setCreativeTab(CreativeTabs.tabMaterials);
-		setUnlocalizedName("grimwoodstick");
+        	setUnlocalizedName("grimwoodstick");
         }
         
         @Override
         @SideOnly(Side.CLIENT)
         public void registerIcons(IconRegister iconRegister) {
-                 this.itemIcon = iconRegister.registerIcon("GrimCraft:grimwoodstick");
+                 this.itemIcon = iconRegister.registerIcon("grimcraft:grimwoodstick");
         }
 }

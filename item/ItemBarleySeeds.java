@@ -10,13 +10,13 @@ public class ItemBarleySeeds extends Item {
         public ItemBarleySeeds(int id) {
                 super(id);
         	setMaxStackSize(64);
-		setCreativeTab(CreativeTabs.tabMaterials);
-		setUnlocalizedName("barleyseeds");
+        	setCreativeTab(CreativeTabs.tabMaterials);
+        	setUnlocalizedName("barleyseeds");
         }
         
         @Override
         @SideOnly(Side.CLIENT)
         public void registerIcons(IconRegister iconRegister) {
-                 this.itemIcon = iconRegister.registerIcon("GrimCraft:barley");
+                 this.itemIcon = iconRegister.registerIcon("grimcraft:barley");
         }
 }
