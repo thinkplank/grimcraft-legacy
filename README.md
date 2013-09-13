@@ -11,3 +11,4 @@ Planned features include:
 - Improved vanilla mechanics for a more fulfilling, difficult, and exciting Nether experience.
 
 Say hi at http://thinkplank.us.
+Thanks to @anonymouspineapple for letting us use his workstation.
