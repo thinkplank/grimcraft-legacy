@@ -8,10 +8,10 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemBarleySeeds extends Item {
         public ItemBarleySeeds(int id) {
-                super(id);
-        	setMaxStackSize(64);
-        	setCreativeTab(CreativeTabs.tabMaterials);
-        	setUnlocalizedName("barleySeeds");
+            	super(id);
+            	setMaxStackSize(64);
+            	setCreativeTab(CreativeTabs.tabMaterials);
+            	setUnlocalizedName("barleySeeds");
         }
         
         @Override

@@ -22,6 +22,7 @@ public class BlockSulfurOre extends Block {
                 return Grimcraft.sulfur.itemID;
         }
         
+        
         public int quantityDropped(Random random) {
         		return random.nextInt(5) + 4;
         }

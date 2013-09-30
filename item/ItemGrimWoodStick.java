@@ -9,9 +9,9 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class ItemGrimWoodStick extends Item {
         public ItemGrimWoodStick(int id) {
                 super(id);
-        	setMaxStackSize(64);
-        	setCreativeTab(CreativeTabs.tabMaterials);
-        	setUnlocalizedName("grimWoodStick");
+                setMaxStackSize(64);
+                setCreativeTab(CreativeTabs.tabMaterials);
+                setUnlocalizedName("grimWoodStick");
         }
         
         @Override
