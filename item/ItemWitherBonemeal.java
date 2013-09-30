@@ -11,7 +11,7 @@ public class ItemWitherBonemeal extends Item {
                 super(id);
         	setMaxStackSize(64);
         	setCreativeTab(CreativeTabs.tabMaterials);
-        	setUnlocalizedName("witherbonemeal");
+        	setUnlocalizedName("witherBonemeal");
         }
         
         @Override

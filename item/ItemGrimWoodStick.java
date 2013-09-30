@@ -11,7 +11,7 @@ public class ItemGrimWoodStick extends Item {
                 super(id);
         	setMaxStackSize(64);
         	setCreativeTab(CreativeTabs.tabMaterials);
-        	setUnlocalizedName("grimwoodstick");
+        	setUnlocalizedName("grimWoodStick");
         }
         
         @Override

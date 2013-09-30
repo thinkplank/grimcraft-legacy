@@ -11,7 +11,7 @@ public class ItemBarleySeeds extends Item {
                 super(id);
         	setMaxStackSize(64);
         	setCreativeTab(CreativeTabs.tabMaterials);
-        	setUnlocalizedName("barleyseeds");
+        	setUnlocalizedName("barleySeeds");
         }
         
         @Override

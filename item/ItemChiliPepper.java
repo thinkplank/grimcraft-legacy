@@ -11,7 +11,7 @@ public class ItemChiliPepper extends Item {
                 super(id);
         		setMaxStackSize(64);
         		setCreativeTab(CreativeTabs.tabMaterials);
-        		setUnlocalizedName("chilipepper");
+        		setUnlocalizedName("chiliPepper");
         }
         
         @Override

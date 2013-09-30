@@ -9,26 +9,23 @@ import net.minecraft.client.renderer.texture.IconRegister;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class BlockSulfurOre extends Block {
-        public BlockSulfurOre (int id, Material material) {
+public class BlockGrimWoodPlanks extends Block {
+        public BlockGrimWoodPlanks (int id, Material material) {
                 super(id, material);
                 setHardness(3F);
                 setStepSound(Block.soundStoneFootstep);
-                setUnlocalizedName("sulfurOre");
+                setUnlocalizedName("grimWoodPlanks");
                 setCreativeTab(CreativeTabs.tabBlock);
         }
         
         public int idDropped(int par1, Random random, int zero) {
-                return Grimcraft.sulfur.itemID;
-        }
-        
-        public int quantityDropped(Random random) {
-        		return random.nextInt(5) + 4;
+                return Grimcraft.grimWoodPlanks.blockID;
         }
         
         @Override
         @SideOnly(Side.CLIENT)
         public void registerIcons(IconRegister iconRegister) {
-                 this.blockIcon = iconRegister.registerIcon("grimcraft:sulfurore");
+                 this.blockIcon = iconRegister.registerIcon("grimcraft:grimwoodplanks");
         }
 }
+

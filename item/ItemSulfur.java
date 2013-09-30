@@ -9,9 +9,9 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class ItemSulfur extends Item {
         public ItemSulfur(int id) {
                 super(id);
-        	setMaxStackSize(64);
-        	setCreativeTab(CreativeTabs.tabMaterials);
-		setUnlocalizedName("sulfur");
+                setMaxStackSize(64);
+                setCreativeTab(CreativeTabs.tabMaterials);
+                setUnlocalizedName("sulfur");
         }
         
         @Override
