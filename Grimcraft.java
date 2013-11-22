@@ -62,7 +62,7 @@ public class Grimcraft {
 	public final static Item phoenixEgg = new ItemPhoenixEgg(9435);
 
 	@SidedProxy(clientSide="thinkplank.grimcraft.client.ClientProxy", serverSide="thinkplank.grimcraft.CommonProxy")
-    public static CommonProxy proxy;
+	public static CommonProxy proxy;
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
