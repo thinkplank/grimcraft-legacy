@@ -1,11 +1,12 @@
-package thinkplank.grimcraft.block;
+package us.thinkplank.grimcraft.block;
 
 import java.util.Random;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
-import thinkplank.grimcraft.Grimcraft;
+import us.thinkplank.grimcraft.Grimcraft;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 

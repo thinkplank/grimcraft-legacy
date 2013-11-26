@@ -1,4 +1,4 @@
-package thinkplank.grimcraft.item;
+package us.thinkplank.grimcraft.item;
 
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;

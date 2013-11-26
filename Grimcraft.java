@@ -6,15 +6,17 @@
  */
 
 
-package thinkplank.grimcraft;
+package us.thinkplank.grimcraft;
 
-import thinkplank.grimcraft.block.*;
-import thinkplank.grimcraft.item.*;
-import net.minecraft.item.*;
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraftforge.common.MinecraftForge;
+import net.minecraft.item.EnumToolMaterial;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.EnumHelper;
+import net.minecraftforge.common.MinecraftForge;
+import us.thinkplank.grimcraft.block.*;
+import us.thinkplank.grimcraft.item.*;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;

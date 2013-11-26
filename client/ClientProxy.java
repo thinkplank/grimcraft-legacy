@@ -1,7 +1,7 @@
-package thinkplank.grimcraft.client;
+package us.thinkplank.grimcraft.client;
 
 import net.minecraftforge.client.MinecraftForgeClient;
-import thinkplank.grimcraft.CommonProxy;
+import us.thinkplank.grimcraft.CommonProxy;
 
 public class ClientProxy extends CommonProxy {
         

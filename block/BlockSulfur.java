@@ -1,4 +1,4 @@
-package thinkplank.grimcraft.block;
+package us.thinkplank.grimcraft.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
