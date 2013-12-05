@@ -46,12 +46,13 @@ public class Grimcraft {
 
     public final static Item grimWoodStick = new ItemGrimWoodStick(9406);
 
-
     public final static Item grimWoodShovel = new ItemGrimWoodShovel(9407, grimWoodMaterial);
     public final static Item grimWoodPickaxe = new ItemGrimWoodPickaxe(9408, grimWoodMaterial);
     public final static Item grimWoodAxe = new ItemGrimWoodAxe(9409, grimWoodMaterial);
     public final static Item grimWoodHoe = new ItemGrimWoodHoe(9410, grimWoodMaterial);
     public final static Item grimWoodSword = new ItemGrimWoodSword(9412, grimWoodMaterial);
+
+    public final static Item netherrackPickaxe = new ItemNetherrackPickaxe(9413, Material.rock);
 
     public final static Item witherBone = new ItemWitherBone(9427);
     public final static Item witherBonemeal = new ItemWitherBonemeal(9428);
@@ -96,6 +97,9 @@ public class Grimcraft {
         LanguageRegistry.addName(sulfurOre, "Sulfur Ore");
         MinecraftForge.setBlockHarvestLevel(sulfurOre, "pickaxe", 4);
         GameRegistry.registerBlock(sulfurOre, "sulfurOre");
+
+        LanguageRegistry.addName(netherrackPickaxe, "Netherrack Pickaxe");
+        GameRegistry.registerBlock(netherrackPickaxe, "netherrackPickaxe");
 
         LanguageRegistry.addName(grimWoodStick, "Grimwood Stick");
         GameRegistry.registerItem(grimWoodStick, "grimWoodStick");
