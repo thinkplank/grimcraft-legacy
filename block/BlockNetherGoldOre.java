@@ -8,17 +8,17 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockNetherGoldOre extends Block {
-        public BlockNetherGoldOre (int id, Material material) {
-                super(id, material);
-                setHardness(3F);
-                setStepSound(Block.soundStoneFootstep);
-                setUnlocalizedName("netherGoldOre");
-                setCreativeTab(CreativeTabs.tabBlock);
-        }
-        
-        @Override
-        @SideOnly(Side.CLIENT)
-        public void registerIcons(IconRegister iconRegister) {
-                 this.blockIcon = iconRegister.registerIcon("grimcraft:nethergoldore");
-        }
+    public BlockNetherGoldOre (int id, Material material) {
+        super(id, material);
+        setHardness(3F);
+        setStepSound(Block.soundStoneFootstep);
+        setUnlocalizedName("netherGoldOre");
+        setCreativeTab(CreativeTabs.tabBlock);
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void registerIcons(IconRegister iconRegister) {
+        this.blockIcon = iconRegister.registerIcon("grimcraft:nethergoldore");
+    }
 }

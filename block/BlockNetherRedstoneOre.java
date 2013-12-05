@@ -11,25 +11,25 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockNetherRedstoneOre extends Block {
-        public BlockNetherRedstoneOre (int id, Material material) {
-                super(id, material);
-                setHardness(3F);
-                setStepSound(Block.soundStoneFootstep);
-                setUnlocalizedName("netherRedstoneOre");
-                setCreativeTab(CreativeTabs.tabBlock);
-        }
-        
-        public int idDropped(int par1, Random random, int zero) {
-                return Item.redstone.itemID;
-        }
-        
-        public int quantityDropped(Random random) {
-        		return random.nextInt(2) + 4;
-        }
-        
-        @Override
-        @SideOnly(Side.CLIENT)
-        public void registerIcons(IconRegister iconRegister) {
-                 this.blockIcon = iconRegister.registerIcon("grimcraft:netherredstoneore");
-        }
+    public BlockNetherRedstoneOre (int id, Material material) {
+        super(id, material);
+        setHardness(3F);
+        setStepSound(Block.soundStoneFootstep);
+        setUnlocalizedName("netherRedstoneOre");
+        setCreativeTab(CreativeTabs.tabBlock);
+    }
+
+    public int idDropped(int par1, Random random, int zero) {
+        return Item.redstone.itemID;
+    }
+
+    public int quantityDropped(Random random) {
+        return random.nextInt(2) + 4;
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void registerIcons(IconRegister iconRegister) {
+        this.blockIcon = iconRegister.registerIcon("grimcraft:netherredstoneore");
+    }
 }

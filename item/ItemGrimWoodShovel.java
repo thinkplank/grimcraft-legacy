@@ -8,16 +8,16 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemGrimWoodShovel extends ItemSpade {
-        public ItemGrimWoodShovel(int id, EnumToolMaterial material) {
-                super(id, material);
-                setMaxStackSize(64);
-                setCreativeTab(CreativeTabs.tabTools);
-                setUnlocalizedName("grimWoodShovel");
-        }
-        
-        @Override
-        @SideOnly(Side.CLIENT)
-        public void registerIcons(IconRegister iconRegister) {
-                 this.itemIcon = iconRegister.registerIcon("grimcraft:grimwoodshovel");
-        }
+    public ItemGrimWoodShovel(int id, EnumToolMaterial material) {
+        super(id, material);
+        setMaxStackSize(64);
+        setCreativeTab(CreativeTabs.tabTools);
+        setUnlocalizedName("grimWoodShovel");
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void registerIcons(IconRegister iconRegister) {
+        this.itemIcon = iconRegister.registerIcon("grimcraft:grimwoodshovel");
+    }
 }

@@ -8,18 +8,18 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockGrimWoodPlanks extends Block {
-        public BlockGrimWoodPlanks (int id, Material material) {
-                super(id, material);
-                setHardness(3F);
-                setStepSound(Block.soundStoneFootstep);
-                setUnlocalizedName("grimWoodPlanks");
-                setCreativeTab(CreativeTabs.tabBlock);
-        }
-        
-        @Override
-        @SideOnly(Side.CLIENT)
-        public void registerIcons(IconRegister iconRegister) {
-                 this.blockIcon = iconRegister.registerIcon("grimcraft:grimwoodplanks");
-        }
+    public BlockGrimWoodPlanks (int id, Material material) {
+        super(id, material);
+        setHardness(3F);
+        setStepSound(Block.soundStoneFootstep);
+        setUnlocalizedName("grimWoodPlanks");
+        setCreativeTab(CreativeTabs.tabBlock);
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void registerIcons(IconRegister iconRegister) {
+        this.blockIcon = iconRegister.registerIcon("grimcraft:grimwoodplanks");
+    }
 }
 
