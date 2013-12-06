@@ -17,6 +17,7 @@ import net.minecraftforge.common.EnumHelper;
 import net.minecraftforge.common.MinecraftForge;
 import us.thinkplank.grimcraft.block.*;
 import us.thinkplank.grimcraft.item.*;
+import us.thinkplank.grimcraft.client.ClientProxy;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -35,6 +36,7 @@ public class Grimcraft {
     public static Grimcraft instance;
 
     static EnumToolMaterial grimWoodMaterial = EnumHelper.addToolMaterial("GRIMWOOD", 4, 59, 2.0F, 0.0F, 15);
+    static EnumToolMaterial netherrackMaterial = EnumHelper.addToolMaterial("NETHERRACK", 5, 131, 4.0F, 1.0F, 5);
 
     public final static Block grimWoodPlanks = new BlockGrimWoodPlanks(916, Material.wood);
     public final static Block fossilstoneOre = new BlockFossilstoneOre(922, Material.rock);
@@ -52,7 +54,7 @@ public class Grimcraft {
     public final static Item grimWoodHoe = new ItemGrimWoodHoe(9410, grimWoodMaterial);
     public final static Item grimWoodSword = new ItemGrimWoodSword(9412, grimWoodMaterial);
 
-    public final static Item netherrackPickaxe = new ItemNetherrackPickaxe(9413, Material.rock);
+    public final static Item netherrackPickaxe = new ItemNetherrackPickaxe(9413, netherrackMaterial);
 
     public final static Item witherBone = new ItemWitherBone(9427);
     public final static Item witherBonemeal = new ItemWitherBonemeal(9428);
@@ -63,7 +65,7 @@ public class Grimcraft {
     public final static Item chiliPepper = new ItemChiliPepper(9434);
     public final static Item phoenixEgg = new ItemPhoenixEgg(9435);
 
-    @SidedProxy(clientSide="thinkplank.grimcraft.client.ClientProxy", serverSide="thinkplank.grimcraft.CommonProxy")
+    @SidedProxy(clientSide="us.thinkplank.grimcraft.client.ClientProxy", serverSide="us.thinkplank.grimcraft.CommonProxy")
         public static CommonProxy proxy;
 
     @EventHandler
@@ -98,9 +100,6 @@ public class Grimcraft {
         MinecraftForge.setBlockHarvestLevel(sulfurOre, "pickaxe", 4);
         GameRegistry.registerBlock(sulfurOre, "sulfurOre");
 
-        LanguageRegistry.addName(netherrackPickaxe, "Netherrack Pickaxe");
-        GameRegistry.registerBlock(netherrackPickaxe, "netherrackPickaxe");
-
         LanguageRegistry.addName(grimWoodStick, "Grimwood Stick");
         GameRegistry.registerItem(grimWoodStick, "grimWoodStick");
 
@@ -121,6 +120,10 @@ public class Grimcraft {
 
         LanguageRegistry.addName(grimWoodSword, "Grimwood Sword");
         GameRegistry.registerItem(grimWoodSword, "grimWoodSword");
+        
+        LanguageRegistry.addName(netherrackPickaxe, "Netherrack Pickaxe");
+        MinecraftForge.setToolClass(netherrackPickaxe, "pickaxe", 5);
+        GameRegistry.registerItem(netherrackPickaxe, "netherrackPickaxe");
 
         LanguageRegistry.addName(witherBone, "Wither Bone");
         GameRegistry.registerItem(witherBone, "witherBone");
