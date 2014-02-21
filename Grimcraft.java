@@ -3,8 +3,10 @@
  * Made with love by Lapiman and Fox
  * Licensed under whatever we decide
  * To-do: Figure out how to use the "assets lang system"
- * Finish updating mappings, etc
  * Will tools be removed?
+ * Update the Item constructors
+ * Figure out the tool material stuff
+ * Figure out how to reference vanilla items (minecraft:bone ?)
  */
 
 
@@ -12,10 +14,10 @@ package us.thinkplank.grimcraft;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.item.EnumToolMaterial;
+//import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.common.EnumHelper;
+//import net.minecraftforge.common.EnumHelper;
 import net.minecraftforge.common.MinecraftForge;
 import us.thinkplank.grimcraft.block.*;
 import us.thinkplank.grimcraft.item.*;
