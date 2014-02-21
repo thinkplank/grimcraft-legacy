@@ -8,10 +8,10 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockSulfur extends Block {
-    public BlockSulfur (int id, Material material) {
-        super(id, material);
+    public BlockSulfur () {
+        super(Material.rock);
         setHardness(3F);
-        setStepSound(Block.soundStoneFootstep);
+        setStepSound(Block.soundTypeStone);
         setUnlocalizedName("sulfurOre");
         setCreativeTab(CreativeTabs.tabBlock);
     }

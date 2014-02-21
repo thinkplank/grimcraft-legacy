@@ -11,10 +11,10 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockNetherRedstoneOre extends Block {
-    public BlockNetherRedstoneOre (int id, Material material) {
-        super(id, material);
+    public BlockNetherRedstoneOre () {
+        super(Material.rock);
         setHardness(3F);
-        setStepSound(Block.soundStoneFootstep);
+        setStepSound(Block.soundTypeStone);
         setUnlocalizedName("netherRedstoneOre");
         setCreativeTab(CreativeTabs.tabBlock);
     }

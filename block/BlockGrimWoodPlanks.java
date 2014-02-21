@@ -8,10 +8,10 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockGrimWoodPlanks extends Block {
-    public BlockGrimWoodPlanks (int id, Material material) {
-        super(id, material);
+    public BlockGrimWoodPlanks () {
+        super(Material.wood);
         setHardness(3F);
-        setStepSound(Block.soundStoneFootstep);
+        setStepSound(Block.soundTypeWood);
         setUnlocalizedName("grimWoodPlanks");
         setCreativeTab(CreativeTabs.tabBlock);
     }

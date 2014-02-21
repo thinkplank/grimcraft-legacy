@@ -1,8 +1,10 @@
 /*
- * Grimcraft.java 1.0.0 11-19-2013
+ * Grimcraft.java 1.0.0 2-21-14
  * Made with love by Lapiman and Fox
  * Licensed under whatever we decide
- * To-do: Rename beetroot
+ * To-do: Figure out how to use the "assets lang system"
+ * Finish updating mappings, etc
+ * Will tools be removed?
  */
 
 
@@ -30,31 +32,30 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(modid="grimcraft", name="grimcraft", version="1.0.0")
-@NetworkMod(clientSideRequired=true, serverSideRequired=false)
 public class Grimcraft {
     @Instance("Grimcraft")
     public static Grimcraft instance;
 
-    static EnumToolMaterial grimWoodMaterial = EnumHelper.addToolMaterial("GRIMWOOD", 4, 59, 2.0F, 0.0F, 15);
-    static EnumToolMaterial netherrackMaterial = EnumHelper.addToolMaterial("NETHERRACK", 5, 131, 4.0F, 1.0F, 5);
+//    static EnumToolMaterial grimWoodMaterial = EnumHelper.addToolMaterial("GRIMWOOD", 4, 59, 2.0F, 0.0F, 15);
+//    static EnumToolMaterial netherrackMaterial = EnumHelper.addToolMaterial("NETHERRACK", 5, 131, 4.0F, 1.0F, 5);
 
-    public final static Block grimWoodPlanks = new BlockGrimWoodPlanks(916, Material.wood);
-    public final static Block fossilstoneOre = new BlockFossilstoneOre(922, Material.rock);
-    public final static Block netherCoalOre = new BlockNetherCoalOre(923, Material.rock);
-    public final static Block netherGoldOre = new BlockNetherGoldOre(924, Material.rock);
-    public final static Block netherRedstoneOre = new BlockNetherRedstoneOre(925, Material.rock);
-    public final static Block sulfurOre = new BlockSulfurOre(926, Material.rock);
-    public final static Block blockSulfur = new BlockSulfur(927, Material.rock);
+    public final static Block grimWoodPlanks = new BlockGrimWoodPlanks();
+    public final static Block fossilstoneOre = new BlockFossilstoneOre();
+    public final static Block netherCoalOre = new BlockNetherCoalOre();
+    public final static Block netherGoldOre = new BlockNetherGoldOre();
+    public final static Block netherRedstoneOre = new BlockNetherRedstoneOre();
+    public final static Block sulfurOre = new BlockSulfurOre();
+    public final static Block blockSulfur = new BlockSulfur();
 
     public final static Item grimWoodStick = new ItemGrimWoodStick(9406);
 
-    public final static Item grimWoodShovel = new ItemGrimWoodShovel(9407, grimWoodMaterial);
-    public final static Item grimWoodPickaxe = new ItemGrimWoodPickaxe(9408, grimWoodMaterial);
-    public final static Item grimWoodAxe = new ItemGrimWoodAxe(9409, grimWoodMaterial);
-    public final static Item grimWoodHoe = new ItemGrimWoodHoe(9410, grimWoodMaterial);
-    public final static Item grimWoodSword = new ItemGrimWoodSword(9412, grimWoodMaterial);
-
-    public final static Item netherrackPickaxe = new ItemNetherrackPickaxe(9413, netherrackMaterial);
+//    public final static Item grimWoodShovel = new ItemGrimWoodShovel(9407, grimWoodMaterial);
+//    public final static Item grimWoodPickaxe = new ItemGrimWoodPickaxe(9408, grimWoodMaterial);
+//    public final static Item grimWoodAxe = new ItemGrimWoodAxe(9409, grimWoodMaterial);
+//    public final static Item grimWoodHoe = new ItemGrimWoodHoe(9410, grimWoodMaterial);
+//    public final static Item grimWoodSword = new ItemGrimWoodSword(9412, grimWoodMaterial);
+//
+//    public final static Item netherrackPickaxe = new ItemNetherrackPickaxe(9413, netherrackMaterial);
 
     public final static Item witherBone = new ItemWitherBone(9427);
     public final static Item witherBonemeal = new ItemWitherBonemeal(9428);
@@ -100,30 +101,30 @@ public class Grimcraft {
         MinecraftForge.setBlockHarvestLevel(sulfurOre, "pickaxe", 4);
         GameRegistry.registerBlock(sulfurOre, "sulfurOre");
 
-        LanguageRegistry.addName(grimWoodStick, "Grimwood Stick");
-        GameRegistry.registerItem(grimWoodStick, "grimWoodStick");
-
-        LanguageRegistry.addName(grimWoodShovel, "Grimwood Shovel");
-        MinecraftForge.setToolClass(grimWoodShovel, "shovel", 4);
-        GameRegistry.registerItem(grimWoodShovel, "grimWoodShovel");
-
-        LanguageRegistry.addName(grimWoodPickaxe, "Grimwood Pickaxe");
-        MinecraftForge.setToolClass(grimWoodPickaxe, "pickaxe", 4);
-        GameRegistry.registerItem(grimWoodPickaxe, "grimWoodPickaxe");
-
-        LanguageRegistry.addName(grimWoodAxe, "Grimwood Axe");
-        MinecraftForge.setToolClass(grimWoodAxe, "axe", 4);
-        GameRegistry.registerItem(grimWoodAxe, "grimWoodAxe");
-
-        LanguageRegistry.addName(grimWoodHoe, "Grimwood Hoe");
-        GameRegistry.registerItem(grimWoodHoe, "grimWoodHoe");
-
-        LanguageRegistry.addName(grimWoodSword, "Grimwood Sword");
-        GameRegistry.registerItem(grimWoodSword, "grimWoodSword");
-        
-        LanguageRegistry.addName(netherrackPickaxe, "Netherrack Pickaxe");
-        MinecraftForge.setToolClass(netherrackPickaxe, "pickaxe", 5);
-        GameRegistry.registerItem(netherrackPickaxe, "netherrackPickaxe");
+//        LanguageRegistry.addName(grimWoodStick, "Grimwood Stick");
+//        GameRegistry.registerItem(grimWoodStick, "grimWoodStick");
+//
+//        LanguageRegistry.addName(grimWoodShovel, "Grimwood Shovel");
+//        MinecraftForge.setToolClass(grimWoodShovel, "shovel", 4);
+//        GameRegistry.registerItem(grimWoodShovel, "grimWoodShovel");
+//
+//        LanguageRegistry.addName(grimWoodPickaxe, "Grimwood Pickaxe");
+//        MinecraftForge.setToolClass(grimWoodPickaxe, "pickaxe", 4);
+//        GameRegistry.registerItem(grimWoodPickaxe, "grimWoodPickaxe");
+//
+//        LanguageRegistry.addName(grimWoodAxe, "Grimwood Axe");
+//        MinecraftForge.setToolClass(grimWoodAxe, "axe", 4);
+//        GameRegistry.registerItem(grimWoodAxe, "grimWoodAxe");
+//
+//        LanguageRegistry.addName(grimWoodHoe, "Grimwood Hoe");
+//        GameRegistry.registerItem(grimWoodHoe, "grimWoodHoe");
+//
+//        LanguageRegistry.addName(grimWoodSword, "Grimwood Sword");
+//        GameRegistry.registerItem(grimWoodSword, "grimWoodSword");
+//        
+//        LanguageRegistry.addName(netherrackPickaxe, "Netherrack Pickaxe");
+//        MinecraftForge.setToolClass(netherrackPickaxe, "pickaxe", 5);
+//        GameRegistry.registerItem(netherrackPickaxe, "netherrackPickaxe");
 
         LanguageRegistry.addName(witherBone, "Wither Bone");
         GameRegistry.registerItem(witherBone, "witherBone");
@@ -151,11 +152,11 @@ public class Grimcraft {
 
         GameRegistry.addRecipe(new ItemStack(grimWoodStick), "x", "x", 'x', new ItemStack(grimWoodPlanks));
         GameRegistry.addRecipe(new ItemStack(witherBonemeal, 3), "x", 'x', new ItemStack(witherBone));
-        GameRegistry.addRecipe(new ItemStack(grimWoodShovel), "x", "y", "y", 'x', new ItemStack(grimWoodPlanks), 'y', new ItemStack(grimWoodStick));
-        GameRegistry.addRecipe(new ItemStack(grimWoodPickaxe), "xxx", " y ", " y ", 'x', new ItemStack(grimWoodPlanks), 'y', new ItemStack(grimWoodStick));
-        GameRegistry.addRecipe(new ItemStack(grimWoodAxe), "xx", "xy", " y", 'x', new ItemStack(grimWoodPlanks), 'y', new ItemStack(grimWoodStick));
-        GameRegistry.addRecipe(new ItemStack(grimWoodHoe), "xx", " y", " y", 'x', new ItemStack(grimWoodPlanks), 'y', new ItemStack(grimWoodStick));
-        GameRegistry.addRecipe(new ItemStack(grimWoodSword), "x", "x", "y", 'x', new ItemStack(grimWoodPlanks), 'y', new ItemStack(grimWoodStick));
+//        GameRegistry.addRecipe(new ItemStack(grimWoodShovel), "x", "y", "y", 'x', new ItemStack(grimWoodPlanks), 'y', new ItemStack(grimWoodStick));
+//        GameRegistry.addRecipe(new ItemStack(grimWoodPickaxe), "xxx", " y ", " y ", 'x', new ItemStack(grimWoodPlanks), 'y', new ItemStack(grimWoodStick));
+//        GameRegistry.addRecipe(new ItemStack(grimWoodAxe), "xx", "xy", " y", 'x', new ItemStack(grimWoodPlanks), 'y', new ItemStack(grimWoodStick));
+//        GameRegistry.addRecipe(new ItemStack(grimWoodHoe), "xx", " y", " y", 'x', new ItemStack(grimWoodPlanks), 'y', new ItemStack(grimWoodStick));
+//        GameRegistry.addRecipe(new ItemStack(grimWoodSword), "x", "x", "y", 'x', new ItemStack(grimWoodPlanks), 'y', new ItemStack(grimWoodStick));
 
         GameRegistry.addSmelting(netherCoalOre.blockID, new ItemStack(Item.coal), 0.2f);
         GameRegistry.addSmelting(netherGoldOre.blockID, new ItemStack(Item.ingotGold), 1.2f);

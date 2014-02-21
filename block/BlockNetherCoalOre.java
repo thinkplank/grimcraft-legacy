@@ -11,8 +11,8 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockNetherCoalOre extends Block {
-    public BlockNetherCoalOre (int id, Material material) {
-        super(id, material);
+    public BlockNetherCoalOre () {
+        super(Material.rock);
         setHardness(3F);
         setStepSound(Block.soundStoneFootstep);
         setUnlocalizedName("netherCoalOre");

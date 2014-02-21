@@ -8,8 +8,8 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockNetherGoldOre extends Block {
-    public BlockNetherGoldOre (int id, Material material) {
-        super(id, material);
+    public BlockNetherGoldOre () {
+        super(Material.rock);
         setHardness(3F);
         setStepSound(Block.soundStoneFootstep);
         setUnlocalizedName("netherGoldOre");

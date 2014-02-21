@@ -11,10 +11,10 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockFossilstoneOre extends Block {
-    public BlockFossilstoneOre (int id, Material material) {
-        super(id, material);
+    public BlockFossilstoneOre () {
+        super(Material.rock);
         setHardness(3F);
-        setStepSound(Block.soundStoneFootstep);
+        setStepSound(Block.soundTypeStone);
         setUnlocalizedName("fossilstoneOre");
         setCreativeTab(CreativeTabs.tabBlock);
     }
