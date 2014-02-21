@@ -27,7 +27,6 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
@@ -47,7 +46,7 @@ public class Grimcraft {
     public final static Block sulfurOre = new BlockSulfurOre();
     public final static Block blockSulfur = new BlockSulfur();
 
-    public final static Item grimWoodStick = new ItemGrimWoodStick(9406);
+    public final static Item grimWoodStick = new ItemGrimWoodStick();
 
 //    public final static Item grimWoodShovel = new ItemGrimWoodShovel(9407, grimWoodMaterial);
 //    public final static Item grimWoodPickaxe = new ItemGrimWoodPickaxe(9408, grimWoodMaterial);
@@ -57,14 +56,14 @@ public class Grimcraft {
 //
 //    public final static Item netherrackPickaxe = new ItemNetherrackPickaxe(9413, netherrackMaterial);
 
-    public final static Item witherBone = new ItemWitherBone(9427);
-    public final static Item witherBonemeal = new ItemWitherBonemeal(9428);
-    public final static Item sulfur = new ItemSulfur(9429);
-    public final static Item barley = new ItemBarley(9421);
-    public final static Item barleySeeds = new ItemBarleySeeds(9432);
-    public final static Item strawberry = new ItemStrawberry(9433);
-    public final static Item chiliPepper = new ItemChiliPepper(9434);
-    public final static Item phoenixEgg = new ItemPhoenixEgg(9435);
+    public final static Item witherBone = new ItemWitherBone();
+    public final static Item witherBonemeal = new ItemWitherBonemeal();
+    public final static Item sulfur = new ItemSulfur();
+    public final static Item barley = new ItemBarley();
+    public final static Item barleySeeds = new ItemBarleySeeds();
+    public final static Item strawberry = new ItemStrawberry();
+    public final static Item chiliPepper = new ItemChiliPepper();
+    public final static Item phoenixEgg = new ItemPhoenixEgg();
 
     @SidedProxy(clientSide="us.thinkplank.grimcraft.client.ClientProxy", serverSide="us.thinkplank.grimcraft.CommonProxy")
         public static CommonProxy proxy;
@@ -158,11 +157,11 @@ public class Grimcraft {
 //        GameRegistry.addRecipe(new ItemStack(grimWoodHoe), "xx", " y", " y", 'x', new ItemStack(grimWoodPlanks), 'y', new ItemStack(grimWoodStick));
 //        GameRegistry.addRecipe(new ItemStack(grimWoodSword), "x", "x", "y", 'x', new ItemStack(grimWoodPlanks), 'y', new ItemStack(grimWoodStick));
 
-        GameRegistry.addSmelting(netherCoalOre.blockID, new ItemStack(Item.coal), 0.2f);
-        GameRegistry.addSmelting(netherGoldOre.blockID, new ItemStack(Item.ingotGold), 1.2f);
-        GameRegistry.addSmelting(netherRedstoneOre.blockID, new ItemStack(Item.redstone), 0.9f);
-        GameRegistry.addSmelting(sulfurOre.blockID, new ItemStack(sulfur), 0.2f);
-        GameRegistry.addSmelting(fossilstoneOre.blockID, new ItemStack(Item.dyePowder, 1, 15), 0.2f);
+        GameRegistry.addSmelting(netherCoalOre, new ItemStack(Item.coal), 0.2f);
+        GameRegistry.addSmelting(netherGoldOre, new ItemStack(Item.ingotGold), 1.2f);
+        GameRegistry.addSmelting(netherRedstoneOre, new ItemStack(Item.redstone), 0.9f);
+        GameRegistry.addSmelting(sulfurOre, new ItemStack(sulfur), 0.2f);
+        GameRegistry.addSmelting(fossilstoneOre, new ItemStack(Item.dyePowder, 1, 15), 0.2f);
 
         GameRegistry.registerFuelHandler(new GrimcraftFuelHandler());
     }
