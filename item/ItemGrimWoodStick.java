@@ -1,22 +1,14 @@
 package us.thinkplank.grimcraft.item;
 
-import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemGrimWoodStick extends Item {
-    public ItemGrimWoodStick(int id) {
-        super(id);
+    public ItemGrimWoodStick() {
+        super();
         setMaxStackSize(64);
         setCreativeTab(CreativeTabs.tabMaterials);
         setUnlocalizedName("grimWoodStick");
-    }
-
-    @Override
-    @SideOnly(Side.CLIENT)
-    public void registerIcons(IconRegister iconRegister) {
-        this.itemIcon = iconRegister.registerIcon("grimcraft:grimwoodstick");
+        setTextureName("grimcraft:grimwoodstick");
     }
 }
