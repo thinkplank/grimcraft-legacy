@@ -7,8 +7,8 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemGrimWoodHoe extends ItemHoe {
-    public ItemGrimWoodHoe(int id, EnumToolMaterial material) {
-        super(id, material);
+    public ItemGrimWoodHoe() {
+        super();
         setMaxStackSize(64);
         setCreativeTab(CreativeTabs.tabTools);
         setUnlocalizedName("grimWoodHoe");
