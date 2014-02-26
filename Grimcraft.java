@@ -4,9 +4,8 @@
  * Licensed under whatever we decide
  * To-do: Figure out how to use the "assets lang system"
  * Will tools be removed?
- * Update the Item constructors
  * Figure out the tool material stuff
- * Figure out how to reference vanilla items (minecraft:bone ?)
+ * Turn all ID strings to lowercase_seperated_with_underscores
  */
 
 
