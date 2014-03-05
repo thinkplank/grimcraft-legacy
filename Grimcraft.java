@@ -77,77 +77,49 @@ public class Grimcraft {
     @EventHandler
     public void load(FMLInitializationEvent event) {
 
-        LanguageRegistry.addName(grimWoodPlanks, "Grimwood Planks");
         MinecraftForge.setBlockHarvestLevel(grimWoodPlanks, "axe", 4);
         GameRegistry.registerBlock(grimWoodPlanks, "grimwoodPlanks");
 
-        LanguageRegistry.addName(fossilstoneOre, "Fossilstone Ore");
         MinecraftForge.setBlockHarvestLevel(fossilstoneOre, "pickaxe", 4);
         GameRegistry.registerBlock(fossilstoneOre, "fossilstoneOre");
 
-        LanguageRegistry.addName(netherCoalOre, "Nether Coal Ore");
         MinecraftForge.setBlockHarvestLevel(netherCoalOre, "pickaxe", 4);
         GameRegistry.registerBlock(netherCoalOre, "netherCoalOre");
 
-        LanguageRegistry.addName(netherGoldOre, "Nether Gold Ore");
         MinecraftForge.setBlockHarvestLevel(netherGoldOre, "pickaxe", 4);
         GameRegistry.registerBlock(netherGoldOre, "netherGoldOre");
 
-        LanguageRegistry.addName(netherRedstoneOre, "Nether Redstone Ore");
         MinecraftForge.setBlockHarvestLevel(netherRedstoneOre, "pickaxe", 4);
         GameRegistry.registerBlock(netherRedstoneOre, "netherRedstoneOre");
 
-        LanguageRegistry.addName(sulfurOre, "Sulfur Ore");
         MinecraftForge.setBlockHarvestLevel(sulfurOre, "pickaxe", 4);
         GameRegistry.registerBlock(sulfurOre, "sulfurOre");
 
-//        LanguageRegistry.addName(grimWoodStick, "Grimwood Stick");
 //        GameRegistry.registerItem(grimWoodStick, "grimWoodStick");
-//
-//        LanguageRegistry.addName(grimWoodShovel, "Grimwood Shovel");
+
 //        MinecraftForge.setToolClass(grimWoodShovel, "shovel", 4);
 //        GameRegistry.registerItem(grimWoodShovel, "grimWoodShovel");
 //
-//        LanguageRegistry.addName(grimWoodPickaxe, "Grimwood Pickaxe");
 //        MinecraftForge.setToolClass(grimWoodPickaxe, "pickaxe", 4);
 //        GameRegistry.registerItem(grimWoodPickaxe, "grimWoodPickaxe");
 //
-//        LanguageRegistry.addName(grimWoodAxe, "Grimwood Axe");
 //        MinecraftForge.setToolClass(grimWoodAxe, "axe", 4);
 //        GameRegistry.registerItem(grimWoodAxe, "grimWoodAxe");
 //
-//        LanguageRegistry.addName(grimWoodHoe, "Grimwood Hoe");
 //        GameRegistry.registerItem(grimWoodHoe, "grimWoodHoe");
-//
-//        LanguageRegistry.addName(grimWoodSword, "Grimwood Sword");
 //        GameRegistry.registerItem(grimWoodSword, "grimWoodSword");
 //        
 //        LanguageRegistry.addName(netherrackPickaxe, "Netherrack Pickaxe");
 //        MinecraftForge.setToolClass(netherrackPickaxe, "pickaxe", 5);
 //        GameRegistry.registerItem(netherrackPickaxe, "netherrackPickaxe");
 
-        LanguageRegistry.addName(witherBone, "Wither Bone");
         GameRegistry.registerItem(witherBone, "witherBone");
-
-        LanguageRegistry.addName(witherBonemeal, "Wither Bonemeal");
         GameRegistry.registerItem(witherBonemeal, "witherBoneMeal");
-
-        LanguageRegistry.addName(sulfur, "Sulfur");
         GameRegistry.registerItem(sulfur, "sulfur");
-
-        LanguageRegistry.addName(barley, "Barley");
         GameRegistry.registerItem(barley, "barley");
-
-        LanguageRegistry.addName(barleySeeds, "Barley Seeds");
         GameRegistry.registerItem(barleySeeds, "barleySeeds");
-
-        LanguageRegistry.addName(strawberry, "Strawberry");
         GameRegistry.registerItem(strawberry, "strawberry");
-
-        LanguageRegistry.addName(chiliPepper, "Chili Pepper");
         GameRegistry.registerItem(chiliPepper, "chiliPepper");
-
-        LanguageRegistry.addName(phoenixEgg, "Phoenix Egg");
         GameRegistry.registerItem(phoenixEgg, "phoenixEgg");
 
         GameRegistry.addRecipe(new ItemStack(grimWoodStick), "x", "x", 'x', new ItemStack(grimWoodPlanks));
