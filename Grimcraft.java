@@ -6,7 +6,6 @@
  * Will tools be removed?
  * Update the Item constructors
  * Figure out the tool material stuff
- * Figure out how to reference vanilla items (minecraft:bone ?)
  */
 
 
