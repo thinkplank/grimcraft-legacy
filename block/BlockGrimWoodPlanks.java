@@ -12,8 +12,9 @@ public class BlockGrimWoodPlanks extends Block {
         super(Material.wood);
         setHardness(3F);
         setStepSound(Block.soundTypeWood);
-        setUnlocalizedName("grimWoodPlanks");
+        setBlockName("grimWoodPlanks");
         setCreativeTab(CreativeTabs.tabBlock);
+        setHarvestLevel("axe", 4);
     }
 
     @Override

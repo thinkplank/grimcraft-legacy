@@ -1,9 +1,8 @@
 /*
- * Grimcraft.java 1.0.0 2-21-14
+ * Grimcraft.java 1.0.0 3-5-2014
  * Made with love by Lapiman and Fox
  * Licensed under whatever we decide
- * To-do: Figure out how to use the "assets lang system"
- * Will tools be removed?
+ * To-do: Will tools be removed?
  * Figure out the tool material stuff
  */
 
