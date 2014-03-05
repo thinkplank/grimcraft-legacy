@@ -7,8 +7,8 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemGrimWoodAxe extends ItemAxe {
-    public ItemGrimWoodAxe(int id, EnumToolMaterial material) {
-        super(id, material);
+    public ItemGrimWoodAxe() {
+        super();
         setMaxStackSize(64);
         setCreativeTab(CreativeTabs.tabTools);
         setUnlocalizedName("grimWoodAxe");

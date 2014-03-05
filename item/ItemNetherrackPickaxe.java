@@ -7,8 +7,8 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemNetherrackPickaxe extends ItemPickaxe {
-    public ItemNetherrackPickaxe(int id, EnumToolMaterial material) {
-        super(id, material);
+    public ItemNetherrackPickaxe() {
+        super();
         setMaxStackSize(64);
         setCreativeTab(CreativeTabs.tabTools);
         setUnlocalizedName("netherrackPickaxe");
