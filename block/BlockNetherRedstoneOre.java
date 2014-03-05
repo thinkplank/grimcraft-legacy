@@ -17,6 +17,7 @@ public class BlockNetherRedstoneOre extends Block {
         setStepSound(Block.soundTypeStone);
         setUnlocalizedName("netherRedstoneOre");
         setCreativeTab(CreativeTabs.tabBlock);
+        setHarvestLevel("pickaxe", 4);
     }
 
     public int idDropped(int par1, Random random, int zero) {

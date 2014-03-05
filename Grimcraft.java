@@ -75,22 +75,22 @@ public class Grimcraft {
     @EventHandler
     public void load(FMLInitializationEvent event) {
 
-        MinecraftForge.setBlockHarvestLevel(grimWoodPlanks, "axe", 4);
+//        MinecraftForge.setBlockHarvestLevel(grimWoodPlanks, "axe", 4);
         GameRegistry.registerBlock(grimWoodPlanks, "grimwoodPlanks");
 
-        MinecraftForge.setBlockHarvestLevel(fossilstoneOre, "pickaxe", 4);
+//        MinecraftForge.setBlockHarvestLevel(fossilstoneOre, "pickaxe", 4);
         GameRegistry.registerBlock(fossilstoneOre, "fossilstoneOre");
 
-        MinecraftForge.setBlockHarvestLevel(netherCoalOre, "pickaxe", 4);
+//        MinecraftForge.setBlockHarvestLevel(netherCoalOre, "pickaxe", 4);
         GameRegistry.registerBlock(netherCoalOre, "netherCoalOre");
 
-        MinecraftForge.setBlockHarvestLevel(netherGoldOre, "pickaxe", 4);
+//        MinecraftForge.setBlockHarvestLevel(netherGoldOre, "pickaxe", 4);
         GameRegistry.registerBlock(netherGoldOre, "netherGoldOre");
 
-        MinecraftForge.setBlockHarvestLevel(netherRedstoneOre, "pickaxe", 4);
+//        MinecraftForge.setBlockHarvestLevel(netherRedstoneOre, "pickaxe", 4);
         GameRegistry.registerBlock(netherRedstoneOre, "netherRedstoneOre");
 
-        MinecraftForge.setBlockHarvestLevel(sulfurOre, "pickaxe", 4);
+//        MinecraftForge.setBlockHarvestLevel(sulfurOre, "pickaxe", 4);
         GameRegistry.registerBlock(sulfurOre, "sulfurOre");
 
 //        GameRegistry.registerItem(grimWoodStick, "grimWoodStick");

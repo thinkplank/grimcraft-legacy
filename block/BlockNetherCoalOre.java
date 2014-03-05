@@ -17,6 +17,7 @@ public class BlockNetherCoalOre extends Block {
         setStepSound(Block.soundStoneFootstep);
         setUnlocalizedName("netherCoalOre");
         setCreativeTab(CreativeTabs.tabBlock);
+        setHarvestLevel("pickaxe", 4);
     }
 
     public int idDropped(int par1, Random random, int zero) {
