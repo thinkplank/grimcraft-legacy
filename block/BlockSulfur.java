@@ -12,7 +12,7 @@ public class BlockSulfur extends Block {
         super(Material.rock);
         setHardness(3F);
         setStepSound(Block.soundTypeStone);
-        setUnlocalizedName("sulfurOre");
+        setBlockName("sulfurOre");
         setCreativeTab(CreativeTabs.tabBlock);
     }
 

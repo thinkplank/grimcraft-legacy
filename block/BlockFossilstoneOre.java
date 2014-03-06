@@ -4,6 +4,7 @@ import java.util.Random;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import cpw.mods.fml.relauncher.Side;
@@ -14,7 +15,7 @@ public class BlockFossilstoneOre extends Block {
         super(Material.rock);
         setHardness(3F);
         setStepSound(Block.soundTypeStone);
-        setUnlocalizedName("fossilstoneOre");
+        setBlockName("fossilstoneOre");
         setCreativeTab(CreativeTabs.tabBlock);
         setHarvestLevel("pickaxe", 4);
     }

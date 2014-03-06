@@ -15,7 +15,7 @@ public class BlockNetherRedstoneOre extends Block {
         super(Material.rock);
         setHardness(3F);
         setStepSound(Block.soundTypeStone);
-        setUnlocalizedName("netherRedstoneOre");
+        setBlockName("netherRedstoneOre");
         setCreativeTab(CreativeTabs.tabBlock);
         setHarvestLevel("pickaxe", 4);
     }

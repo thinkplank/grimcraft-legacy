@@ -11,8 +11,8 @@ public class BlockNetherGoldOre extends Block {
     public BlockNetherGoldOre () {
         super(Material.rock);
         setHardness(3F);
-        setStepSound(Block.soundStoneFootstep);
-        setUnlocalizedName("netherGoldOre");
+        setStepSound(Block.soundTypeStone);
+        setBlockName("netherGoldOre");
         setCreativeTab(CreativeTabs.tabBlock);
         setHarvestLevel("pickaxe", 4);
     }

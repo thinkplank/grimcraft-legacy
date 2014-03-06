@@ -75,25 +75,14 @@ public class Grimcraft {
     @EventHandler
     public void load(FMLInitializationEvent event) {
 
-//        MinecraftForge.setBlockHarvestLevel(grimWoodPlanks, "axe", 4);
         GameRegistry.registerBlock(grimWoodPlanks, "grimwoodPlanks");
-
-//        MinecraftForge.setBlockHarvestLevel(fossilstoneOre, "pickaxe", 4);
         GameRegistry.registerBlock(fossilstoneOre, "fossilstoneOre");
-
-//        MinecraftForge.setBlockHarvestLevel(netherCoalOre, "pickaxe", 4);
         GameRegistry.registerBlock(netherCoalOre, "netherCoalOre");
-
-//        MinecraftForge.setBlockHarvestLevel(netherGoldOre, "pickaxe", 4);
         GameRegistry.registerBlock(netherGoldOre, "netherGoldOre");
-
-//        MinecraftForge.setBlockHarvestLevel(netherRedstoneOre, "pickaxe", 4);
         GameRegistry.registerBlock(netherRedstoneOre, "netherRedstoneOre");
-
-//        MinecraftForge.setBlockHarvestLevel(sulfurOre, "pickaxe", 4);
         GameRegistry.registerBlock(sulfurOre, "sulfurOre");
 
-//        GameRegistry.registerItem(grimWoodStick, "grimWoodStick");
+        GameRegistry.registerItem(grimWoodStick, "grimWoodStick");
 
 //        MinecraftForge.setToolClass(grimWoodShovel, "shovel", 4);
 //        GameRegistry.registerItem(grimWoodShovel, "grimWoodShovel");
@@ -105,9 +94,9 @@ public class Grimcraft {
 //        GameRegistry.registerItem(grimWoodAxe, "grimWoodAxe");
 //
 //        GameRegistry.registerItem(grimWoodHoe, "grimWoodHoe");
+        
 //        GameRegistry.registerItem(grimWoodSword, "grimWoodSword");
-//        
-//        LanguageRegistry.addName(netherrackPickaxe, "Netherrack Pickaxe");
+        
 //        MinecraftForge.setToolClass(netherrackPickaxe, "pickaxe", 5);
 //        GameRegistry.registerItem(netherrackPickaxe, "netherrackPickaxe");
 
