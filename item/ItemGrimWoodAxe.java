@@ -3,15 +3,16 @@ package us.thinkplank.grimcraft.item;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemAxe;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemGrimWoodAxe extends ItemAxe {
-    public ItemGrimWoodAxe() {
-        super();
+    public ItemGrimWoodAxe(ToolMaterial material) {
+        super(material);
         setMaxStackSize(64);
         setCreativeTab(CreativeTabs.tabTools);
         setUnlocalizedName("grimWoodAxe");
-        setTextureName("grimcraft:grimwoodaxe");
+    }
+    
+    public void registerItemIcons(IIconRegister iconRegister) {
+        this.itemIcon = iconRegister.registerIcon("grimcraft:grimwoodaxe");
     }
 }

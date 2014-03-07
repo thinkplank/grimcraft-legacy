@@ -6,7 +6,8 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
-import us.thinkplank.grimcraft.Grimcraft;
+import net.minecraft.item.Item;
+import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -20,8 +21,8 @@ public class BlockSulfurOre extends Block {
         setHarvestLevel("pickaxe", 4);
     }
 
-    public int idDropped(int par1, Random random, int zero) {
-        return Grimcraft.sulfur.itemID;
+    public Item getItemDropped(int p_149650_1_, Random p_149650_2_, int p_149650_3_) {
+        return GameRegistry.findItem("grimcraft", "sulfur");
     }
 
     public int quantityDropped(Random random) {
