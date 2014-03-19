@@ -6,8 +6,8 @@ import net.minecraft.item.Item;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class ItemBeetroot extends Item {
-    public ItemBeetroot() {
+public class ItemNetherRoot extends Item {
+    public ItemNetherRoot() {
         super();
         setMaxStackSize(64);
         setCreativeTab(CreativeTabs.tabMaterials);

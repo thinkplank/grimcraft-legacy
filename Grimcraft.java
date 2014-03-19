@@ -67,11 +67,6 @@ public class Grimcraft {
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
 
-    }
-
-    @EventHandler
-    public void load(FMLInitializationEvent event) {
-
         GameRegistry.registerBlock(grimWoodPlanks, "grimwoodPlanks");
         GameRegistry.registerBlock(fossilstoneOre, "fossilstoneOre");
         GameRegistry.registerBlock(netherCoalOre, "netherCoalOre");
@@ -121,6 +116,11 @@ public class Grimcraft {
         GameRegistry.addSmelting(fossilstoneOre, new ItemStack(GameRegistry.findItem("minecraft", "dye"), 1, 15), 0.2f);
 
         GameRegistry.registerFuelHandler(new GrimcraftFuelHandler());
+    }
+
+    @EventHandler
+    public void load(FMLInitializationEvent event) {
+
     }
 
     @EventHandler
